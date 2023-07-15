@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MovieMesh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/moviename.css">
+
+</head>
+
+<body>
+
+  <section class="nav-bar">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="../index.html"><img src="static/logo(2).png"></a>
+    </div>
+    <nav class="fill">
+      <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+      <ul class="nav-list"  style="text-decoration: none;">
+        <li style="list-style: none;">
+          <a href="#">Home</a>
+        </li>
+        <li style="list-style: none;">
+          <a href="#">About</a>
+        </li>
+        <li style="list-style: none;">
+          <a href="#">Service</a>
+        </li>
+        <li style="list-style: none;">
+          <a href="#!">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+{% for list in lists %}
+<div class="wrapper">
+    <div class="outer">
+        <div class="content animated fadeInLeft">
+            <h1>{{ list }}</h1>
+            <p>Shadow Your real.........</p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+</body>
+</html>
